@@ -13,6 +13,34 @@ public class Main {
     // create scanner for user input
     Scanner input = new Scanner(System.in);
 
+    // - - - SWITCH CASE EXAMPLE - - - //
+    //get the user's choice between 1 -5
+    System.out.println("Please make a selection (1-3)");
+    int choice = input.nextInt();
+    input.nextLine();
+
+    //determine which candy to drop
+    switch (choice){
+      case 1:
+        System.out.println("Here is your chocolate bar");
+        break;
+      case 2:
+        System.out.println("Here are your Skittles");
+        break;
+      case 3:
+        System.out.println("Here are your M&Ms");
+        break;
+      default:
+        System.out.println("Invalid Choice");
+    }
+
+
+
+
+
+
+
+    // - - - NESTED LOOP EXAMPLE - - - //
     //ask the user if the animal has feathers
     System.out.println("Does the animal have feathers???");
     String featherAnswer = input.nextLine();
